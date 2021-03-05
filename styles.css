@@ -14,7 +14,7 @@ html{
 body{
 	min-height: 100vh;
 	max-width: 100%;
-	font-size: 14px
+	font-size: 14px;
 	padding: 0 15px;
 	background-color: var(--main-bg-primary);
 	color: var(--white);
@@ -52,7 +52,7 @@ h1,h2,h3,h4,button, .nav-list li{
 /*************CSS Classes**************/
 header{
 	display: flex;
-	height: 8vh;
+	height: 7vh;
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--main-bg-secondary);
@@ -70,7 +70,7 @@ header{
 	margin-right: 30px;
 }
 .hero{
-	min-height: 100vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -79,7 +79,7 @@ header{
 	padding-top: 3rem;
 }
 .hero-img{
-	width: 30rem;
+	width: 25rem;
 	max-width: 100%;
 }
 .hero-text{
@@ -247,10 +247,41 @@ footer{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
+	margin: auto;
+}
+footer ion-icon{
+	font-size: 18px;
 }
 .attribution{
 	text-align: center;
 	font-size: 13px;
 	background-color: var(--footer-bg);
 	color: var(--blue-cta);
+}
+
+@media screen and (max-width: 1125px){
+	.testimonials .row{
+	margin: 20px;
+	}
+	.contact-us{
+		top: 50%;
+		left: 20%;
+		display: none;
+	}
+	.email{
+		width: 10rem;
+	}
+	.form-header{
+		margin: 5px;
+	}
+	.no-hover{
+		margin-top: 10px;
+		width: 10rem;
+		padding: 5px;
+		font-size: 12px;
+	}
+	.stay-productive .row{
+		flex-wrap: wrap;
+	}
 }
